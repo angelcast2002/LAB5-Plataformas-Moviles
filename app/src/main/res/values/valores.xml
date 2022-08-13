@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_linearl_margin_top">5dp</dimen>
+    <dimen name="padding_encabezado">5dp</dimen>
+    <dimen name="margin_start_descargar">40dp</dimen>
+    <dimen name="margin_left_actualizacion">25dp</dimen>
+    <dimen name="margin_icono1">10dp</dimen>
+    <dimen name="margin_start_icono">15dp</dimen>
+    <dimen name="size_icono">32dp</dimen>
+    <dimen name="size_text_dia_cumpleanos">30dp</dimen>
+    <dimen name="margin_top_dia_cumpleanos">12dp</dimen>
+    <dimen name="margin_end_dia_cumpleanos">68dp</dimen>
+    <dimen name="margin_top_dia_dia">12dp</dimen>
+    <dimen name="margin_end_dia_dia">72dp</dimen>
+    <dimen name="size_text_dia_dia">15dp</dimen>
+    <dimen name="margin_top_bottom_terminarjornada">45dp</dimen>
+    <dimen name="size_text_bottom_terminarjornada">15dp</dimen>
+    <dimen name="size_border_bottom_terminarjornada">5dp</dimen>
+    <dimen name="margin_secondview">10dp</dimen>
+    <dimen name="cerodp">0dp</dimen>
+    <dimen name="size_name_restaurant">20dp</dimen>
+    <dimen name="margin_start_nameofrest">20dp</dimen>
+    <dimen name="margin_top_nameofrest">20dp</dimen>
+    <dimen name="margin_bt_bottom_secondview">15dp</dimen>
+    <dimen name="padding_bt_h_secondview">50dp</dimen>
+    <dimen name="margin_image_v_secondview">20dp</dimen>
+    <dimen name="size_turn_signal">15dp</dimen>
+    <dimen name="margin_lateral">15dp</dimen>
+    <dimen name="heigth_constraint_second">180dp</dimen>
+    <dimen name="margin_constraint_vertical">50dp</dimen>
+    <dimen name="padding_icono1_actualizar">5dp</dimen>
+    <dimen name="elevation_constraint2">2dp</dimen>
+
+</resources>

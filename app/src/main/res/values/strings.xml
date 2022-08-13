@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LAB4</string>
+    <string name="text_descargar">Descargar</string>
+    <string name="text_ActualizacionDisponible">Actualizacion disponible</string>
+    <string name="text_dia_cumpleanos">Domingo</string>
+    <string name="text_dia_dia">18 de septiembre</string>
+    <string name="text_bottom_terminarjornada">Terminar jornada</string>
+    <string name="text_name_restaurant">Montano\'s</string>
+    <string name="text_direccion_rest">12 Calle 3–28, Cdad. de Guatemala</string>
+    <string name="text_bt_secondview_iniciar">Iniciar</string>
+    <string name="text_bt_secondview_detalles">Detalles</string>
+    <string name="text_horario">12:00PM 11:00PM</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/color_fondo_main"
+    >
+
+    <LinearLayout
+        android:id="@+id/barra_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_linear_back"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:padding="@dimen/padding_encabezado"
+        >
+
+
+        <ImageView
+            android:padding="@dimen/padding_icono1_actualizar"
+            android:layout_width="@dimen/size_icono"
+            android:layout_height="@dimen/size_icono"
+            android:background="@drawable/background_round"
+            android:layout_margin="@dimen/margin_icono1"
+            android:src="@drawable/ic_update"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_actualizacion"
+            android:text="@string/text_ActualizacionDisponible"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="@dimen/cerodp"
+            android:layout_height="@dimen/cerodp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/text_descargar"
+            android:padding="@dimen/cerodp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_dia_cumpleanos"
+        android:layout_marginStart="@dimen/margin_lateral"
+        android:text="@string/text_dia_cumpleanos"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_text_dia_cumpleanos"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barra_top" />
+
+    <TextView
+        android:id="@+id/dia_cumpleanos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_lateral"
+        android:layout_marginTop="@dimen/margin_top_dia_dia"
+        android:text="@string/text_dia_dia"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_text_dia_dia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_bottom_terminarjornada"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_text_bottom_terminarjornada"
+        app:cornerRadius="@dimen/size_border_bottom_terminarjornada"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_lateral"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:strokeColor="@color/color_borde_boton_terminarjornada"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="@dimen/cerodp"
+        android:layout_height="@dimen/heigth_constraint_second"
+
+        android:layout_marginHorizontal="@dimen/margin_secondview"
+        android:layout_marginVertical="@dimen/margin_constraint_vertical"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dia_cumpleanos"
+        android:elevation="@dimen/elevation_constraint2">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical1_in_seconview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_nameofrest"
+            android:layout_marginTop="@dimen/margin_top_nameofrest"
+            android:text="@string/text_name_restaurant"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_name_restaurant"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_nameofrest"
+            android:layout_marginTop="@dimen/margin_secondview"
+            android:text="@string/text_direccion_rest"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_nameofrest"
+            android:layout_marginTop="@dimen/margin_secondview"
+            android:text="@string/text_horario"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/button_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bt_bottom_secondview"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:paddingHorizontal="@dimen/padding_bt_h_secondview"
+            android:text="@string/text_bt_secondview_iniciar"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical1_in_seconview"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_detalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bt_bottom_secondview"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="@dimen/padding_bt_h_secondview"
+            android:text="@string/text_bt_secondview_detalles"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_orange_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertical1_in_seconview" />
+
+        <ImageView
+            android:layout_width="@dimen/size_turn_signal"
+            android:layout_height="@dimen/size_turn_signal"
+            android:layout_margin="@dimen/margin_image_v_secondview"
+            android:background="@drawable/background_rombo"
+            android:rotationX="180"
+            android:rotationY="-180"
+
+            android:src="@drawable/ic_baseline_keyboard_return_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_for_second_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
