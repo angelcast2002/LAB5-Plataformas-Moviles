@@ -24,11 +24,12 @@
     <dimen name="margin_bt_bottom_secondview">15dp</dimen>
     <dimen name="padding_bt_h_secondview">50dp</dimen>
     <dimen name="margin_image_v_secondview">20dp</dimen>
-    <dimen name="size_turn_signal">15dp</dimen>
+    <dimen name="size_turn_signal">20dp</dimen>
     <dimen name="margin_lateral">15dp</dimen>
     <dimen name="heigth_constraint_second">180dp</dimen>
     <dimen name="margin_constraint_vertical">50dp</dimen>
     <dimen name="padding_icono1_actualizar">5dp</dimen>
     <dimen name="elevation_constraint2">2dp</dimen>
+    <dimen name="padding_turn_signal">4dp</dimen>
 
 </resources>
