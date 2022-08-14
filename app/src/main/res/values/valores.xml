@@ -7,18 +7,18 @@
     <dimen name="margin_icono1">10dp</dimen>
     <dimen name="margin_start_icono">15dp</dimen>
     <dimen name="size_icono">32dp</dimen>
-    <dimen name="size_text_dia_cumpleanos">30dp</dimen>
+    <dimen name="size_text_dia_cumpleanos">30sp</dimen>
     <dimen name="margin_top_dia_cumpleanos">12dp</dimen>
     <dimen name="margin_end_dia_cumpleanos">68dp</dimen>
     <dimen name="margin_top_dia_dia">12dp</dimen>
     <dimen name="margin_end_dia_dia">72dp</dimen>
-    <dimen name="size_text_dia_dia">15dp</dimen>
+    <dimen name="size_text_dia_dia">15sp</dimen>
     <dimen name="margin_top_bottom_terminarjornada">45dp</dimen>
-    <dimen name="size_text_bottom_terminarjornada">15dp</dimen>
+    <dimen name="size_text_bottom_terminarjornada">15sp</dimen>
     <dimen name="size_border_bottom_terminarjornada">5dp</dimen>
     <dimen name="margin_secondview">10dp</dimen>
     <dimen name="cerodp">0dp</dimen>
-    <dimen name="size_name_restaurant">20dp</dimen>
+    <dimen name="size_name_restaurant">20sp</dimen>
     <dimen name="margin_start_nameofrest">20dp</dimen>
     <dimen name="margin_top_nameofrest">20dp</dimen>
     <dimen name="margin_bt_bottom_secondview">15dp</dimen>
@@ -32,4 +32,18 @@
     <dimen name="elevation_constraint2">2dp</dimen>
     <dimen name="padding_turn_signal">4dp</dimen>
 
+    //valores para details
+    <dimen name="size_details_res_nombre">30sp</dimen>
+    <dimen name="margin_top_details_res_nombre">45dp</dimen>
+    <dimen name="margin_start_details_text">35dp</dimen>
+    <dimen name="margin_top_details_horario">15dp</dimen>
+    <dimen name="margin_top_bt_details_iniciarvisita">30dp</dimen>
+    <dimen name="padding_bt_details_iniciarvisita">10dp</dimen>
+    <dimen name="margin_top_caja_gris">35dp</dimen>
+    <dimen name="height_caja_gris">200dp</dimen>
+    <dimen name="margin_top_details_text_infoadicional">35dp</dimen>
+    <dimen name="size_text_infoadiconal">20sp</dimen>
+    <dimen name="margin_ic_details_reloj">30dp</dimen>
+    <dimen name="margin_ic_details_telefono">30dp</dimen>
+    <dimen name="margin_top_text_horario_atencion">22.5dp</dimen>
 </resources>

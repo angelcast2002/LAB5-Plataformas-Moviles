@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LAB4</string>
+    <string name="app_name">LAB5</string>
     <string name="text_descargar">Descargar</string>
-    <string name="text_ActualizacionDisponible">Actualizacion disponible</string>
+    <string name="text_ActualizacionDisponible">Actualización disponible</string>
     <string name="text_dia_cumpleanos">Domingo</string>
     <string name="text_dia_dia">18 de septiembre</string>
     <string name="text_bottom_terminarjornada">Terminar jornada</string>
@@ -11,4 +11,10 @@
     <string name="text_bt_secondview_iniciar">Iniciar</string>
     <string name="text_bt_secondview_detalles">Detalles</string>
     <string name="text_horario">12:00PM 11:00PM</string>
+    <string name="text_bt_details_iniciarvisita">Iniciar visita</string>
+    <string name="text_details_informacion_adicional">Información adicional</string>
+    <string name="text_horario_de_atencion">Horario de atención</string>
+    <string name="text_telefono">Teléfono</string>
+    <string name="text_telefono_num">2505-7000</string>
+    <string name="text_llamar_details">Llamar</string>
 </resources>

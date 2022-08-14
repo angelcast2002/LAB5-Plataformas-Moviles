@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="@color/color_fondo_main"
+    android:id="@+id/root_permissionActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ly_caja_gris"
+        android:layout_width="@dimen/cerodp"
+        android:layout_height="@dimen/height_caja_gris"
+        android:layout_marginTop="@dimen/margin_top_caja_gris"
+        android:background="@color/color_borde_boton_terminarjornada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_iniciarVisita">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView_res_name_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Montano's"
+        android:layout_marginTop="@dimen/margin_top_details_res_nombre"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:textSize="@dimen/size_details_res_nombre"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_res_direccion_details"
+        android:layout_width="wrap_content"
+        tools:text="5a calle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_details_horario"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_res_name_details" />
+
+    <Button
+        android:id="@+id/button_iniciarVisita"
+        android:layout_width="@dimen/cerodp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_bt_details_iniciarvisita"
+        android:layout_marginHorizontal="@dimen/margin_start_details_text"
+        android:layout_marginTop="@dimen/margin_top_bt_details_iniciarvisita"
+        android:text="@string/text_bt_details_iniciarvisita"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_res_direccion_details" />
+
+    <TextView
+        android:id="@+id/text_informacionadicional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:layout_marginTop="@dimen/margin_top_details_text_infoadicional"
+        android:textSize="@dimen/size_text_infoadiconal"
+        android:textStyle="bold"
+        android:text="@string/text_details_informacion_adicional"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_caja_gris"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/ic_reloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_informacionadicional"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_access_time_24"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:layout_marginTop="@dimen/margin_ic_details_reloj"
+        />
+
+    <TextView
+        android:id="@+id/text_horario_atencion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_horario_de_atencion"
+        app:layout_constraintTop_toBottomOf="@id/text_informacionadicional"
+        app:layout_constraintStart_toEndOf="@id/ic_reloj"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:layout_marginTop="@dimen/margin_top_text_horario_atencion"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/textView_res_horario_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Horario de atención"
+        app:layout_constraintTop_toBottomOf="@id/text_horario_atencion"
+        app:layout_constraintStart_toEndOf="@id/ic_reloj"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/ic_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView_res_horario_details"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_outline_phone_24"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:layout_marginTop="@dimen/margin_ic_details_telefono"
+        />
+    <TextView
+        android:id="@+id/text_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_telefono"
+        app:layout_constraintTop_toBottomOf="@id/textView_res_horario_details"
+        app:layout_constraintStart_toEndOf="@id/ic_telefono"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:layout_marginTop="@dimen/margin_top_text_horario_atencion"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/text_telefono_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_telefono_num"
+        app:layout_constraintTop_toBottomOf="@id/text_telefono"
+        app:layout_constraintStart_toEndOf="@id/ic_telefono"
+        android:layout_marginStart="@dimen/margin_start_details_text"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/button_llamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_start_details_text"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="@color/blue"
+        android:text="@string/text_llamar_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ic_telefono" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
