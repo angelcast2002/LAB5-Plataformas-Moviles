@@ -52,14 +52,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         buttonDescargar.setOnClickListener {
+
             var intent = Intent()
             try {
                 intent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.kiloo.subwaysurf"))
+                startActivity(intent)
             } catch (e: ActivityNotFoundException) {
                 intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"))
+                startActivity(intent)
             }
 
-            startActivity(intent)
+
         }
 
         buttonDetalles.setOnClickListener {
